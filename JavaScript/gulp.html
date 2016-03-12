@@ -1,0 +1,1031 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>gulp | 说明</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../JavaScript/grunt.html" />
+    
+    
+    <link rel="prev" href="../JavaScript/bower.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.2"
+        data-chapter-title="gulp"
+        data-filepath="JavaScript/gulp.md"
+        data-basepath=".."
+        data-revision="Sat Mar 12 2016 17:06:22 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="tools/index.html">
+            
+                
+                    <a href="../tools/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Tools
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="tools/linux.html">
+            
+                
+                    <a href="../tools/linux.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        linux命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="tools/git.html">
+            
+                
+                    <a href="../tools/git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        git命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="tools/gitbook.html">
+            
+                
+                    <a href="../tools/gitbook.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        gitBook
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="JavaScript/javascript.html">
+            
+                
+                    <a href="../JavaScript/javascript.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        JavaScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="JavaScript/bower.html">
+            
+                
+                    <a href="../JavaScript/bower.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        bower
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="JavaScript/gulp.html">
+            
+                
+                    <a href="../JavaScript/gulp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        gulp
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="JavaScript/grunt.html">
+            
+                
+                    <a href="../JavaScript/grunt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        grunt
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="JavaScript/cordova.html">
+            
+                
+                    <a href="../JavaScript/cordova.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        cordova
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="JavaScript/ionic.html">
+            
+                
+                    <a href="../JavaScript/ionic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        ionic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="JavaScript/ReactNative.html">
+            
+                
+                    <a href="../JavaScript/ReactNative.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        ReactNative
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="JavaScript/HybridApp.html">
+            
+                
+                    <a href="../JavaScript/HybridApp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        HybridApp
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="JavaScript/meteor.html">
+            
+                
+                    <a href="../JavaScript/meteor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        meteor
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="JavaScript/webflow.html">
+            
+                
+                    <a href="../JavaScript/webflow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        webflow
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="angular/index.html">
+            
+                
+                    <a href="../angular/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        AngularJS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="db/index.html">
+            
+                
+                    <a href="../db/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        DB
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="db/oracle.html">
+            
+                
+                    <a href="../db/oracle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        oracle
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="db/MongoDB.html">
+            
+                
+                    <a href="../db/MongoDB.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        MongoDB
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="db/memcache.html">
+            
+                
+                    <a href="../db/memcache.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        memcache
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="db/Mysql.html">
+            
+                
+                    <a href="../db/Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Mysql
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="db/redis.html">
+            
+                
+                    <a href="../db/redis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        redis
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="db/SQLite.html">
+            
+                
+                    <a href="../db/SQLite.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        SQLite
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="h5/index.html">
+            
+                
+                    <a href="../h5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        H5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="h5/H5.html">
+            
+                
+                    <a href="../h5/H5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        express
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="java/index.html">
+            
+                
+                    <a href="../java/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Java
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="java/eclipse.html">
+            
+                
+                    <a href="../java/eclipse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Eclipse IDE
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="java/jbpm.html">
+            
+                
+                    <a href="../java/jbpm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Jbpm工作流引擎
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="java/maven.html">
+            
+                
+                    <a href="../java/maven.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        maven
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="java/servlet.html">
+            
+                
+                    <a href="../java/servlet.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        servlet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="java/SpringMVC.html">
+            
+                
+                    <a href="../java/SpringMVC.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        SpringMVC
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="php/index.html">
+            
+                
+                    <a href="../php/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        PHP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="php/curl.html">
+            
+                
+                    <a href="../php/curl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        curl
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="php/composer.html">
+            
+                
+                    <a href="../php/composer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        composer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="php/swagger.html">
+            
+                
+                    <a href="../php/swagger.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        swagger
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="node/index.html">
+            
+                
+                    <a href="../node/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        NodeJS
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="node/express.html">
+            
+                
+                    <a href="../node/express.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        express
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="node/spm.html">
+            
+                
+                    <a href="../node/spm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        spm
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="server/index.html">
+            
+                
+                    <a href="../server/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Server
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="server/apache.html">
+            
+                
+                    <a href="../server/apache.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        apache
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="server/apache_ant.html">
+            
+                
+                    <a href="../server/apache_ant.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        apache_ant
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="server/digitalocean.html">
+            
+                
+                    <a href="../server/digitalocean.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        digitalocean
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="server/hadoop.html">
+            
+                
+                    <a href="../server/hadoop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        hadoop
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="end/index.html">
+            
+                
+                    <a href="../end/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        结束语
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >说明</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="gulp">gulp</h1>
+<p>Gulp &#x662F;&#x4E00;&#x6B3E;&#x57FA;&#x4E8E;&#x4EFB;&#x52A1;&#x7684;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;&#xFF0C;&#x901A;&#x8FC7;&#x63D2;&#x4EF6;&#x7684;&#x914D;&#x5408;&#x89E3;&#x51B3;&#x5168;&#x5957;&#x524D;&#x7AEF;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x5982;&#x9759;&#x6001;&#x9875;&#x9762;&#x538B;&#x7F29;&#x3001;&#x56FE;&#x7247;&#x538B;&#x7F29;&#x3001;JS&#x5408;&#x5E76;&#x3001;SASS&#x540C;&#x6B65;&#x7F16;&#x8BD1;&#x5E76;&#x538B;&#x7F29;CSS&#x3001;&#x670D;&#x52A1;&#x5668;&#x63A7;&#x5236;&#x5BA2;&#x6237;&#x7AEF;&#x540C;&#x6B65;&#x5237;&#x65B0;&#x3002;</p>
+<p><code>npm install -g gulp</code>  &#x5168;&#x5C40;&#x5B89;&#x88C5;
+<code>npm install gulp --save-dev</code>  # &#x5C40;&#x90E8;&#x5B89;&#x88C5;</p>
+<h2 id="gulp&#x7EC4;&#x4EF6;">Gulp&#x7EC4;&#x4EF6;</h2>
+<p>&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x9700;&#x8981;&#x7684;&#x529F;&#x80FD;&#xFF1A;
+1&#x3001;&#x56FE;&#x7247;&#xFF08;&#x538B;&#x7F29;&#x56FE;&#x7247;&#x652F;&#x6301;jpg&#x3001;png&#x3001;gif&#xFF09;
+2&#x3001;&#x6837;&#x5F0F; &#xFF08;&#x652F;&#x6301;sass &#x540C;&#x65F6;&#x652F;&#x6301;&#x5408;&#x5E76;&#x3001;&#x538B;&#x7F29;&#x3001;&#x91CD;&#x547D;&#x540D;&#xFF09;
+3&#x3001;javascript &#xFF08;&#x68C0;&#x67E5;&#x3001;&#x5408;&#x5E76;&#x3001;&#x538B;&#x7F29;&#x3001;&#x91CD;&#x547D;&#x540D;&#xFF09;
+4&#x3001;html &#xFF08;&#x538B;&#x7F29;&#xFF09;
+5&#x3001;&#x5BA2;&#x6237;&#x7AEF;&#x540C;&#x6B65;&#x5237;&#x65B0;&#x663E;&#x793A;&#x4FEE;&#x6539;
+6&#x3001;&#x6784;&#x5EFA;&#x9879;&#x76EE;&#x524D;&#x6E05;&#x9664;&#x53D1;&#x5E03;&#x73AF;&#x5883;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#xFF08;&#x4FDD;&#x6301;&#x53D1;&#x5E03;&#x73AF;&#x5883;&#x7684;&#x6E05;&#x6D01;&#xFF09;</p>
+<p>&#x901A;&#x8FC7;gulp plugins&#xFF0C;&#x5BFB;&#x627E;&#x5BF9;&#x4E8E;&#x7684;gulp&#x7EC4;&#x4EF6;
+gulp-imagemin: &#x538B;&#x7F29;&#x56FE;&#x7247;
+gulp-ruby-sass: &#x652F;&#x6301;sass
+gulp-minify-css: &#x538B;&#x7F29;css
+gulp-jshint: &#x68C0;&#x67E5;js
+gulp-uglify: &#x538B;&#x7F29;js
+gulp-concat: &#x5408;&#x5E76;&#x6587;&#x4EF6;
+gulp-rename: &#x91CD;&#x547D;&#x540D;&#x6587;&#x4EF6;
+gulp-htmlmin: &#x538B;&#x7F29;html
+gulp-clean: &#x6E05;&#x7A7A;&#x6587;&#x4EF6;&#x5939;
+gulp-livereload: &#x670D;&#x52A1;&#x5668;&#x63A7;&#x5236;&#x5BA2;&#x6237;&#x7AEF;&#x540C;&#x6B65;&#x5237;&#x65B0;&#xFF08;&#x9700;&#x914D;&#x5408;chrome&#x63D2;&#x4EF6;LiveReload&#x53CA;tiny-lr&#xFF09;</p>
+<h2 id="&#x5B89;&#x88C5;gulp&#x7EC4;&#x4EF6;">&#x5B89;&#x88C5;Gulp&#x7EC4;&#x4EF6;</h2>
+<p>&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#xFF0C;&#x901A;&#x8FC7;cd project &#x8FDB;&#x5165;&#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;&#x4E0B;&#x8FB9;&#x7684;npm&#x5B89;&#x88C5;&#x7EC4;&#x4EF6;&#x3002;
+<code>npm install gulp-util gulp-imagemin gulp-ruby-sass gulp-minify-css gulp-jshint gulp-uglify gulp-rename gulp-concat gulp-clean gulp-livereload tiny-lr --save-dev</code></p>
+<h2 id="&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h2>
+<p>project(&#x9879;&#x76EE;&#x540D;&#x79F0;)
+|&#x2013;.git &#x901A;&#x8FC7;git&#x7BA1;&#x7406;&#x9879;&#x76EE;&#x4F1A;&#x751F;&#x6210;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;
+|&#x2013;node_modules &#x7EC4;&#x4EF6;&#x76EE;&#x5F55;
+|&#x2013;dist &#x53D1;&#x5E03;&#x73AF;&#x5883;
+    |&#x2013;css &#x6837;&#x5F0F;&#x6587;&#x4EF6;(style.css style.min.css)
+    |&#x2013;images &#x56FE;&#x7247;&#x6587;&#x4EF6;(&#x538B;&#x7F29;&#x56FE;&#x7247;)
+    |&#x2013;js js&#x6587;&#x4EF6;(main.js main.min.js)
+    |&#x2013;index.html &#x9759;&#x6001;&#x6587;&#x4EF6;(&#x538B;&#x7F29;html)
+|&#x2013;src &#x751F;&#x4EA7;&#x73AF;&#x5883;
+    |&#x2013;sass sass&#x6587;&#x4EF6;
+    |&#x2013;images &#x56FE;&#x7247;&#x6587;&#x4EF6;
+    |&#x2013;js js&#x6587;&#x4EF6;
+    |&#x2013;index.html &#x9759;&#x6001;&#x6587;&#x4EF6;
+|&#x2013;.jshintrc jshint&#x914D;&#x7F6E;&#x6587;&#x4EF6;
+|&#x2013;gulpfile.js gulp&#x4EFB;&#x52A1;&#x6587;&#x4EF6;</p>
+<h2 id="gulp&#x57FA;&#x7840;&#x8BED;&#x6CD5;">gulp&#x57FA;&#x7840;&#x8BED;&#x6CD5;</h2>
+<p>gulp&#x901A;&#x8FC7;gulpfile&#x6587;&#x4EF6;&#x6765;&#x5B8C;&#x6210;&#x76F8;&#x5173;&#x4EFB;&#x52A1;&#xFF0C;&#x56E0;&#x6B64;&#x9879;&#x76EE;&#x4E2D;&#x5FC5;&#x987B;&#x5305;&#x542B;gulpfile.js</p>
+<p>gulp&#x6709;&#x4E94;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;src&#x3001;dest&#x3001;task&#x3001;run&#x3001;watch
+src&#x548C;dest&#xFF1A;&#x6307;&#x5B9A;&#x6E90;&#x6587;&#x4EF6;&#x548C;&#x5904;&#x7406;&#x540E;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;
+watch&#xFF1A;&#x7528;&#x6765;&#x76D1;&#x542C;&#x6587;&#x4EF6;&#x7684;&#x53D8;&#x5316;
+task&#xFF1A;&#x6307;&#x5B9A;&#x4EFB;&#x52A1;
+run&#xFF1A;&#x6267;&#x884C;&#x4EFB;&#x52A1;</p>
+<h2 id="&#x7F16;&#x5199;gulp&#x4EFB;&#x52A1;">&#x7F16;&#x5199;gulp&#x4EFB;&#x52A1;</h2>
+<blockquote>
+<pre><code>   /**
+     * &#x7EC4;&#x4EF6;&#x5B89;&#x88C5;
+     * npm install gulp-util gulp-imagemin gulp-ruby-sass gulp-minify-css gulp-jshint gulp-uglify gulp-rename gulp-concat gulp-clean gulp-livereload tiny-lr --save-dev
+     */
+</code></pre></blockquote>
+<pre><code>    // &#x5F15;&#x5165; gulp&#x53CA;&#x7EC4;&#x4EF6;
+    var gulp    = require(&apos;gulp&apos;),                 //&#x57FA;&#x7840;&#x5E93;
+        imagemin = require(&apos;gulp-imagemin&apos;),       //&#x56FE;&#x7247;&#x538B;&#x7F29;
+        sass = require(&apos;gulp-ruby-sass&apos;),          //sass
+        minifycss = require(&apos;gulp-minify-css&apos;),    //css&#x538B;&#x7F29;
+        jshint = require(&apos;gulp-jshint&apos;),           //js&#x68C0;&#x67E5;
+        uglify  = require(&apos;gulp-uglify&apos;),          //js&#x538B;&#x7F29;
+        rename = require(&apos;gulp-rename&apos;),           //&#x91CD;&#x547D;&#x540D;
+        concat  = require(&apos;gulp-concat&apos;),          //&#x5408;&#x5E76;&#x6587;&#x4EF6;
+        clean = require(&apos;gulp-clean&apos;),             //&#x6E05;&#x7A7A;&#x6587;&#x4EF6;&#x5939;
+        tinylr = require(&apos;tiny-lr&apos;),               //livereload
+        server = tinylr(),
+        port = 35729,
+        livereload = require(&apos;gulp-livereload&apos;);   //livereload
+
+    // HTML&#x5904;&#x7406;
+    gulp.task(&apos;html&apos;, function() {
+        var htmlSrc = &apos;./src/*.html&apos;,
+            htmlDst = &apos;./dist/&apos;;
+
+        gulp.src(htmlSrc)
+            .pipe(livereload(server))
+            .pipe(gulp.dest(htmlDst))
+    });
+
+    // &#x6837;&#x5F0F;&#x5904;&#x7406;
+    gulp.task(&apos;css&apos;, function () {
+        var cssSrc = &apos;./src/scss/*.scss&apos;,
+            cssDst = &apos;./dist/css&apos;;
+
+        gulp.src(cssSrc)
+            .pipe(sass({ style: &apos;expanded&apos;}))
+            .pipe(gulp.dest(cssDst))
+            .pipe(rename({ suffix: &apos;.min&apos; }))
+            .pipe(minifycss())
+            .pipe(livereload(server))
+            .pipe(gulp.dest(cssDst));
+    });
+
+    // &#x56FE;&#x7247;&#x5904;&#x7406;
+    gulp.task(&apos;images&apos;, function(){
+        var imgSrc = &apos;./src/images/**/*&apos;,
+            imgDst = &apos;./dist/images&apos;;
+        gulp.src(imgSrc)
+            .pipe(imagemin())
+            .pipe(livereload(server))
+            .pipe(gulp.dest(imgDst));
+    })
+
+    // js&#x5904;&#x7406;
+    gulp.task(&apos;js&apos;, function () {
+        var jsSrc = &apos;./src/js/*.js&apos;,
+            jsDst =&apos;./dist/js&apos;;
+
+        gulp.src(jsSrc)
+            .pipe(jshint(&apos;.jshintrc&apos;))
+            .pipe(jshint.reporter(&apos;default&apos;))
+            .pipe(concat(&apos;main.js&apos;))
+            .pipe(gulp.dest(jsDst))
+            .pipe(rename({ suffix: &apos;.min&apos; }))
+            .pipe(uglify())
+            .pipe(livereload(server))
+            .pipe(gulp.dest(jsDst));
+    });
+
+    // &#x6E05;&#x7A7A;&#x56FE;&#x7247;&#x3001;&#x6837;&#x5F0F;&#x3001;js
+    gulp.task(&apos;clean&apos;, function() {
+        gulp.src([&apos;./dist/css&apos;, &apos;./dist/js&apos;, &apos;./dist/images&apos;], {read: false})
+            .pipe(clean());
+    });
+
+    // &#x9ED8;&#x8BA4;&#x4EFB;&#x52A1; &#x6E05;&#x7A7A;&#x56FE;&#x7247;&#x3001;&#x6837;&#x5F0F;&#x3001;js&#x5E76;&#x91CD;&#x5EFA; &#x8FD0;&#x884C;&#x8BED;&#x53E5; gulp
+    gulp.task(&apos;default&apos;, [&apos;clean&apos;], function(){
+        gulp.start(&apos;html&apos;,&apos;css&apos;,&apos;images&apos;,&apos;js&apos;);
+    });
+
+    // &#x76D1;&#x542C;&#x4EFB;&#x52A1; &#x8FD0;&#x884C;&#x8BED;&#x53E5; gulp watch
+    gulp.task(&apos;watch&apos;,function(){
+
+        server.listen(port, function(err){
+            if (err) {
+                return console.log(err);
+            }
+
+            // &#x76D1;&#x542C;html
+            gulp.watch(&apos;./src/*.html&apos;, function(event){
+                gulp.run(&apos;html&apos;);
+            })
+
+            // &#x76D1;&#x542C;css
+            gulp.watch(&apos;./src/scss/*.scss&apos;, function(){
+                gulp.run(&apos;css&apos;);
+            });
+
+            // &#x76D1;&#x542C;images
+            gulp.watch(&apos;./src/images/**/*&apos;, function(){
+                gulp.run(&apos;images&apos;);
+            });
+
+            // &#x76D1;&#x542C;js
+            gulp.watch(&apos;./src/js/*.js&apos;, function(){
+                gulp.run(&apos;js&apos;);
+            });
+
+        });
+    });
+</code></pre><h2 id="livereload&#x914D;&#x7F6E;">LiveReload&#x914D;&#x7F6E;</h2>
+<p>1&#x3001;&#x5B89;&#x88C5;Chrome <a href="http://livereload.com/extensions/" target="_blank">LiveReload</a>
+2&#x3001;&#x901A;&#x8FC7;npm&#x5B89;&#x88C5;http-server &#xFF0C;&#x5FEB;&#x901F;&#x5EFA;&#x7ACB;http&#x670D;&#x52A1;
+npm install http-server -g</p>
+<p>3&#x3001;&#x901A;&#x8FC7;cd&#x627E;&#x5230;&#x53D1;&#x5E03;&#x73AF;&#x5883;&#x76EE;&#x5F55;dist
+4&#x3001;&#x8FD0;&#x884C;http-server&#xFF0C;&#x9ED8;&#x8BA4;&#x7AEF;&#x53E3;&#x662F;8080
+5&#x3001;&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;localhost:8080
+6&#x3001;&#x518D;&#x6253;&#x5F00;&#x4E00;&#x4E2A;cmd&#xFF0C;&#x901A;&#x8FC7;cd&#x627E;&#x5230;&#x9879;&#x76EE;&#x8DEF;&#x5F84;&#x6267;&#x884C;gulp&#xFF0C;&#x6E05;&#x7A7A;&#x53D1;&#x5E03;&#x73AF;&#x5883;&#x5E76;&#x521D;&#x59CB;&#x5316;
+7&#x3001;&#x6267;&#x884C;&#x76D1;&#x63A7; gulp
+8&#x3001;&#x70B9;&#x51FB;chrome&#x4E0A;&#x7684;LiveReload&#x63D2;&#x4EF6;&#xFF0C;&#x7A7A;&#x5FC3;&#x53D8;&#x6210;&#x5B9E;&#x5FC3;&#x5373;&#x5173;&#x8054;&#x4E0A;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;css&#x3001;js&#x3001;html&#x5373;&#x65F6;&#x4F1A;&#x663E;&#x793A;&#x5230;&#x9875;&#x9762;&#x4E2D;&#x3002;</p>
+<p>&#x8FD0;&#x884C;<code>glup</code></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../JavaScript/bower.html" class="navigation navigation-prev " aria-label="Previous page: bower"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../JavaScript/grunt.html" class="navigation navigation-next " aria-label="Next page: grunt"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
