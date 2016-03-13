@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>oracle | 说明</title>
+        <title>nginx 高并发反向代理 | 简介</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../db/MongoDB.html" />
+    <link rel="next" href="../server/GeoServer.html" />
     
     
-    <link rel="prev" href="../db/index.html" />
+    <link rel="prev" href="../server/tomcat.html" />
     
 
         
@@ -49,11 +49,11 @@
         
         
     <div class="book"
-        data-level="4.1"
-        data-chapter-title="oracle"
-        data-filepath="db/oracle.md"
+        data-level="10.3"
+        data-chapter-title="nginx 高并发反向代理"
+        data-filepath="server/nginx.md"
         data-basepath=".."
-        data-revision="Sat Mar 12 2016 17:06:22 GMT+0800 (中国标准时间)"
+        data-revision="Sun Mar 13 2016 22:56:10 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -91,7 +91,7 @@
                         
                             <b>1.</b>
                         
-                        Tools
+                        常用命令集合
                     </a>
             
             
@@ -107,7 +107,7 @@
                         
                             <b>1.1.</b>
                         
-                        linux命令
+                        Linux命令
                     </a>
             
             
@@ -122,7 +122,7 @@
                         
                             <b>1.2.</b>
                         
-                        git命令
+                        Git命令
                     </a>
             
             
@@ -137,7 +137,7 @@
                         
                             <b>1.3.</b>
                         
-                        gitBook
+                        GitBook
                     </a>
             
             
@@ -173,7 +173,7 @@
                         
                             <b>2.1.</b>
                         
-                        bower
+                        bower 客户端软件包
                     </a>
             
             
@@ -188,7 +188,7 @@
                         
                             <b>2.2.</b>
                         
-                        gulp
+                        gulp 自动化构建
                     </a>
             
             
@@ -203,7 +203,7 @@
                         
                             <b>2.3.</b>
                         
-                        grunt
+                        grunt 构建工具
                     </a>
             
             
@@ -218,7 +218,7 @@
                         
                             <b>2.4.</b>
                         
-                        cordova
+                        cordova js访问硬件
                     </a>
             
             
@@ -233,7 +233,7 @@
                         
                             <b>2.5.</b>
                         
-                        ionic
+                        ionic 移动APP框架
                     </a>
             
             
@@ -248,7 +248,7 @@
                         
                             <b>2.6.</b>
                         
-                        ReactNative
+                        ReactNative 脸书框架
                     </a>
             
             
@@ -263,7 +263,7 @@
                         
                             <b>2.7.</b>
                         
-                        HybridApp
+                        HybridApp 混合模式移动应用
                     </a>
             
             
@@ -278,7 +278,7 @@
                         
                             <b>2.8.</b>
                         
-                        meteor
+                        meteor 构建web应用新技术
                     </a>
             
             
@@ -293,7 +293,7 @@
                         
                             <b>2.9.</b>
                         
-                        webflow
+                        webflow 互联网开发
                     </a>
             
             
@@ -335,7 +335,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="4.1" data-path="db/oracle.html">
+        <li class="chapter " data-level="4.1" data-path="db/oracle.html">
             
                 
                     <a href="../db/oracle.html">
@@ -521,7 +521,7 @@
                         
                             <b>6.3.</b>
                         
-                        maven
+                        Maven 软件项目管理工具
                     </a>
             
             
@@ -536,7 +536,7 @@
                         
                             <b>6.4.</b>
                         
-                        servlet
+                        Servlet Java Web 技术的核心基础
                     </a>
             
             
@@ -552,6 +552,21 @@
                             <b>6.5.</b>
                         
                         SpringMVC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="java/factory.html">
+            
+                
+                    <a href="../java/factory.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        设计模式
                     </a>
             
             
@@ -587,7 +602,7 @@
                         
                             <b>7.1.</b>
                         
-                        curl
+                        curl 传输工具
                     </a>
             
             
@@ -602,7 +617,7 @@
                         
                             <b>7.2.</b>
                         
-                        composer
+                        composer 依赖关系管理
                     </a>
             
             
@@ -617,7 +632,7 @@
                         
                             <b>7.3.</b>
                         
-                        swagger
+                        swagger API接口管理
                     </a>
             
             
@@ -653,7 +668,7 @@
                         
                             <b>8.1.</b>
                         
-                        express
+                        express web应用开发框架
                     </a>
             
             
@@ -679,77 +694,46 @@
             
         </li>
     
-        <li class="chapter " data-level="9" data-path="server/index.html">
+        <li class="chapter " data-level="9" data-path="bigtable/index.html">
             
                 
-                    <a href="../server/index.html">
+                    <a href="../bigtable/index.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>9.</b>
                         
-                        Server
+                        大数据
                     </a>
             
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="9.1" data-path="server/apache.html">
+        <li class="chapter " data-level="9.1" >
             
-                
-                    <a href="../server/apache.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.1.</b>
-                        
-                        apache
-                    </a>
+            <span><b>9.1.</b> openstack 云计算平台</span>
             
             
         </li>
     
-        <li class="chapter " data-level="9.2" data-path="server/apache_ant.html">
+        <li class="chapter " data-level="9.2" >
             
-                
-                    <a href="../server/apache_ant.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.2.</b>
-                        
-                        apache_ant
-                    </a>
+            <span><b>9.2.</b> Hbase 分布式数据库</span>
             
             
         </li>
     
-        <li class="chapter " data-level="9.3" data-path="server/digitalocean.html">
+        <li class="chapter " data-level="9.3" data-path="bigtable/hadoop.html">
             
                 
-                    <a href="../server/digitalocean.html">
+                    <a href="../bigtable/hadoop.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>9.3.</b>
                         
-                        digitalocean
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="9.4" data-path="server/hadoop.html">
-            
-                
-                    <a href="../server/hadoop.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>9.4.</b>
-                        
-                        hadoop
+                        hadoop 分布式系统架构
                     </a>
             
             
@@ -760,14 +744,153 @@
             
         </li>
     
-        <li class="chapter " data-level="10" data-path="end/index.html">
+        <li class="chapter " data-level="10" data-path="server/index.html">
+            
+                
+                    <a href="../server/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Server
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="server/apache.html">
+            
+                
+                    <a href="../server/apache.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        apache
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="server/tomcat.html">
+            
+                
+                    <a href="../server/tomcat.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        tomcat for java
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="10.3" data-path="server/nginx.html">
+            
+                
+                    <a href="../server/nginx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        nginx 高并发反向代理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="server/GeoServer.html">
+            
+                
+                    <a href="../server/GeoServer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        GeoServer 地图服务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="server/apache_ant.html">
+            
+                
+                    <a href="../server/apache_ant.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        apache Ant
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="server/digitalocean.html">
+            
+                
+                    <a href="../server/digitalocean.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        digitalocean
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+            <span><b>11.</b> 项目分析</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="project/r2.html">
+            
+                
+                    <a href="../project/r2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        r2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="end/index.html">
             
                 
                     <a href="../end/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>10.</b>
+                            <b>12.</b>
                         
                         结束语
                     </a>
@@ -798,7 +921,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >说明</a>
+        <a href="../" >简介</a>
     </h1>
 </div>
 
@@ -808,147 +931,70 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="oracle">Oracle</h1>
-<h2 id="oracle&#x65F6;&#x663E;&#x793A;&#x7684;&#x4E2D;&#x6587;&#x4E3A;">ORACLE&#x65F6;&#x663E;&#x793A;&#x7684;&#x4E2D;&#x6587;&#x4E3A;?</h2>
+                        <h1 id="nginx">Nginx</h1>
+<p>&#x9AD8;&#x6027;&#x80FD;&#x9AD8;&#x5E76;&#x53D1;(10&#x4E07;&#x4EE5;&#x4E0A;&#xFF0C;&#x767E;&#x4E07;&#x7EA7;&#x5E76;&#x53D1;&#x91CF;)&#xFF0C;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#xFF0C;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#x7B49;&#x7279;&#x70B9;</p>
+<h2 id="ubuntu-&#x5B89;&#x88DD;">Ubuntu &#x5B89;&#x88DD;</h2>
 <ol>
-<li><code>select userenv(&apos;language&apos;) from dual;</code>
-&#x5F97;&#x5230;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5B57;&#x7B26;&#x96C6;&#x4E3A;&#xFF1A;SIMPLIFIED CHINESE_CHINA.ZHS16GBK</li>
-<li>&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;
-&#x53D8;&#x91CF;&#x540D;&#xFF1A;NLS_LANG
-&#x53D8;&#x91CF;&#x503C;&#xFF1A;SIMPLIFIED CHINESE_CHINA.ZHS16GBK</li>
+<li>&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x5B89;&#x88C5; <code>$sudo apt-get install nginx</code></li>
+<li>&#x4E0B;&#x8F7D;&#x6E90;&#x7801;&#x5B89;&#x88C5;&#x4F7F;&#x7528;<code>./config make make install</code> &#x5B89;&#x88C5;</li>
 </ol>
-<h2 id="oracle&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x66F4;&#x6539;">oracle&#x6570;&#x636E;&#x5E93;&#x7684;&#x5B57;&#x7B26;&#x96C6;&#x66F4;&#x6539;</h2>
-<pre><code>[root@server183 /]# sqlplus /nolog 
-SQL*Plus: Release 11.2.0.1.0 Production on Wed Nov 7 23:50:56 2012 
-
-Copyright (c) 1982, 2010, Oracle.  All rights reserved. 
-
-SQL&gt; conn / as sysdba     --&#x9700;&#x8981;&#x4F7F;&#x7528;SYSDBA&#x5E10;&#x6237; 
-
-Connected. 
-
-SQL&gt;  startup mount        
-
-ORA-01081: cannot start already-running ORACLE - shut it down first 
-
-SQL&gt;  shutdown immediate;   --&#x505C;&#x6B62;&#x6570;&#x636E;&#x5E93; 
-
-Database closed. 
-
-Database dismounted. 
-
-ORACLE instance shut down. 
-
-SQL&gt;  startup mount          --&#x542F;&#x52A8;&#x6570;&#x636E;&#x5E93;&#x5230; mount &#x72B6;&#x6001; 
-
-ORACLE instance started. 
-
-
-
-Total System Global Area 1686925312 bytes 
-
-Fixed Size                  2176368 bytes 
-
-Variable Size             989858448 bytes 
-
-Database Buffers          687865856 bytes 
-
-Redo Buffers                7024640 bytes 
-
-Database mounted. 
-
-
-
-SQL&gt; alter session set sql_trace=true; 
-
-Session altered. 
-
-
-
-SQL&gt;  alter system enable restricted session; 
-
-System altered. 
-
-
-
-SQL&gt; alter system set job_queue_processes=0; 
-
-System altered. 
-
-
-
-SQL&gt; alter system set aq_tm_processes=0; 
-
-System altered. 
-
-
-
-SQL&gt; alter database open; 
-
-Database altered. 
-
-
-
-
-
-SQL&gt;  ALTER DATABASE character set INTERNAL_USE ZHS16GBK; --&#x4FEE;&#x6539;&#x5B57;&#x7B26;&#x96C6;AL32UTF8-&gt;ZHS16GBK 
-
-
-
-Database altered. 
-
-
-
-SQL&gt; shutdown immediate;        --&#x518D;&#x6B21;&#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93; 
-
-Database closed. 
-
-Database dismounted. 
-
-ORACLE instance shut down. 
-
-SQL&gt; STARTUP             --&#x542F;&#x52A8;&#x6570;&#x636E;&#x5E93; 
-
-ORACLE instance started. 
-
-
-
-Total System Global Area 1686925312 bytes 
-
-Fixed Size                  2176368 bytes 
-
-Variable Size             989858448 bytes 
-
-Database Buffers          687865856 bytes 
-
-Redo Buffers                7024640 bytes 
-
-Database mounted. 
-
-Database opened. 
-
-SQL&gt; select * from v$nls_parameters where parameter = &apos;NLS_CHARACTERSET&apos;; 
-
-
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-client&#x7AEF;&#x5B57;&#x7B26;&#x96C6;&#x4FEE;&#x6539; 
-&#x5728; /home/oracle&#x4E0E; /root&#x7528;&#x6237;&#x76EE;&#x5F55;&#x4E0B;&#x7684;.bash_profile&#x4E2D; 
-&#x6DFB;&#x52A0;&#x6216;&#x4FEE;&#x6539; export NLS_LANG=&quot;AMERICAN_AMERICA.UTF8&quot; &#x8BED;&#x53E5; 
-&#x5173;&#x95ED;&#x5F53;&#x524D;ssh&#x7A97;&#x53E3;&#x3002; 
-</code></pre><h2 id="orcale-11g-&#x4EE5;&#x4E0A;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;exp&#x4E0D;&#x5BFC;&#x51FA;&#x7A7A;&#x8868;">Orcale 11g &#x4EE5;&#x4E0A;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;(exp&#x4E0D;&#x5BFC;&#x51FA;&#x7A7A;&#x8868;)</h2>
-<pre><code>SQL&gt; create directory expdp_dir as &apos;D:\mzl\backup &apos;;
-SQL&gt; grant read,write on directory expdp_dir to test&#xFF1B;
-
-&#x4ECE;&#x4E00;&#x4E2A;&#x7528;&#x6237;expdp&#x5BFC;&#x51FA;&#x518D;impdp&#x5BFC;&#x5165;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x7528;&#x6237; 
-&#x5982;&#x679C;&#x60F3;&#x5BFC;&#x5165;&#x7684;&#x7528;&#x6237;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;:
-1. &#x5BFC;&#x51FA;&#x7528;&#x6237; expdp user1/pass1 directory=dumpdir dumpfile=user1.dmp
-2. &#x5BFC;&#x5165;&#x7528;&#x6237; impdp user2/pass2 directory=dumpdir dumpfile=user1.dmp REMAP_SCHEMA=user1:user2 EXCLUDE=USER full=y;
-&#x5982;&#x679C;&#x60F3;&#x5BFC;&#x5165;&#x7684;&#x7528;&#x6237;&#x4E0D;&#x5B58;&#x5728;:
-1. &#x5BFC;&#x51FA;&#x7528;&#x6237; expdp user1/pass1 directory=dumpdir dumpfile=user1.dmp
-2. &#x5BFC;&#x5165;&#x7528;&#x6237; impdp system/passsystem directory=dumpdir dumpfile=user1.dmp REMAP_SCHEMA=user1:user2 full=y;
-3. user2&#x4F1A;&#x81EA;&#x52A8;&#x5EFA;&#x7ACB;&#xFF0C;&#x5176;&#x6743;&#x9650;&#x548C;&#x4F7F;&#x7528;&#x7684;&#x8868;&#x7A7A;&#x95F4;&#x4E0E;user1&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x6B64;&#x65F6;&#x7528;user2&#x65E0;&#x6CD5;&#x767B;&#x5F55;&#xFF0C;&#x5FC5;&#x987B;&#x4FEE;&#x6539;user2&#x7684;&#x5BC6;&#x7801;
-</code></pre><p>&#x6765;&#x6E90;&#xFF1A;<a href="http://blog.csdn.net/giianhui/article/details/7788550" target="_blank">http://blog.csdn.net/giianhui/article/details/7788550</a></p>
+<h2 id="&#x57FA;&#x672C;&#x76EE;&#x5F55;">&#x57FA;&#x672C;&#x76EE;&#x5F55;</h2>
+<ol>
+<li>&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x7684;&#x76EE;&#x5F55;<ul>
+<li>&#x6240;&#x6709;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x90FD;&#x5728;/etc/nginx</li>
+<li>&#x65E5;&#x5FD7;&#x653E;&#x5728;&#x4E86;/var/log/nginx</li>
+<li>&#x914D;&#x7F6E;/etc/nginx/sites-enabled/default</li>
+</ul>
+</li>
+<li>&#x4F7F;&#x7528;&#x6E90;&#x7801;&#x5B89;&#x88C5;<ul>
+<li>/usr/local/nginx/sbin &#x547D;&#x4EE4;&#x76EE;&#x5F55;</li>
+<li>/usr/local/nginx/conf &#x914D;&#x7F6E;&#x76EE;&#x5F55;</li>
+</ul>
+</li>
+</ol>
+<h2 id="&#x542F;&#x52A8;&#x4E0E;&#x505C;&#x6B62;">&#x542F;&#x52A8;&#x4E0E;&#x505C;&#x6B62;</h2>
+<p>window&#x73AF;&#x5883;&#x548C;Linux&#x73AF;&#x5883;&#x6709;&#x6240;&#x4E0D;&#x540C;</p>
+<h5 id="window&#x73AF;&#x5883;">window&#x73AF;&#x5883;</h5>
+<pre><code>start nginx     //&#x542F;&#x52A8;
+nginx -s stop   //&#x505C;&#x6B62;
+nginx -s reload //&#x91CD;&#x542F;
+</code></pre><h5 id="linux&#x73AF;&#x5883;">Linux&#x73AF;&#x5883;</h5>
+<p><em>pid&#x4E3A;nginx&#x7684;master&#x8FDB;&#x7A0B;(ps -ef|grep nginx)</em></p>
+<ol>
+<li>&#x542F;&#x52A8;<ul>
+<li>/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf     //&#x542F;&#x52A8;</li>
+<li>/usr/local/nginx/sbin/nginx -t -c /usr/local/nginx/conf/nginx.conf     //&#x6D4B;&#x8BD5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x6B63;&#x786E;</li>
+</ul>
+</li>
+<li>&#x505C;&#x6B62; <ul>
+<li>kill -QUIT pid  //&#x4ECE;&#x5BB9;&#x505C;&#x6B62; </li>
+<li>kill -TERM pid  //&#x5FEB;&#x901F;&#x505C;&#x6B62; </li>
+<li>kill -INT pid   //&#x5FEB;&#x901F;&#x505C;&#x6B62;</li>
+<li>pkill -g nginx  //&#x5F3A;&#x5236;&#x505C;&#x6B62;</li>
+</ul>
+</li>
+<li>&#x91CD;&#x542F;<ul>
+<li>&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;</li>
+<li>cd /usr/local/nginx/sbin</li>
+<li>./nginx -s reload //&#x91CD;&#x542F;</li>
+<li>&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x6CD5;</li>
+<li>kill -HUP pid</li>
+</ul>
+</li>
+</ol>
+<h3 id="&#x4FE1;&#x53F7;&#x63A7;&#x5236;">&#x4FE1;&#x53F7;&#x63A7;&#x5236;</h3>
+<ul>
+<li>HUP:&#x91CD;&#x542F;</li>
+<li>QUIT:&#x4ECE;&#x5BB9;&#x5173;&#x95ED;</li>
+<li>TERM:&#x5FEB;&#x901F;&#x5173;&#x95ED;</li>
+<li>INT:&#x4ECE;&#x5BB9;&#x5173;&#x95ED;</li>
+<li>USR1:&#x5207;&#x6362;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;</li>
+<li>USR2:&#x5E73;&#x6ED1;&#x5347;&#x7EA7;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;</li>
+<li>WINCH:&#x4ECE;&#x5BB9;&#x5173;&#x95ED;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;</li>
+</ul>
+<h3 id="nginxconf&#x914D;&#x7F6E;&#x6587;&#x4EF6;">nginx.conf&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>&#x5DE5;&#x4F5C;&#x884D;&#x751F;&#x8FDB;&#x7A0B;&#x6570; &#x901A;&#x5E38;&#x4EE3;&#x8868;cpu&#x7684;&#x6838;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x6838;&#x6570;&#x7684;&#x4E24;&#x500D;<br>worker_processes  1;<br>&#x8BBE;&#x7F6E;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;<br>events {<br>    worker_connections  1024;<br>}<br>http {
+    server { }<br>    server { }<br>} </p>
 
                     
                     </section>
@@ -959,10 +1005,10 @@ SQL&gt; grant read,write on directory expdp_dir to test&#xFF1B;
         </div>
 
         
-        <a href="../db/index.html" class="navigation navigation-prev " aria-label="Previous page: DB"><i class="fa fa-angle-left"></i></a>
+        <a href="../server/tomcat.html" class="navigation navigation-prev " aria-label="Previous page: tomcat for java"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../db/MongoDB.html" class="navigation navigation-next " aria-label="Next page: MongoDB"><i class="fa fa-angle-right"></i></a>
+        <a href="../server/GeoServer.html" class="navigation navigation-next " aria-label="Next page: GeoServer 地图服务"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
@@ -986,9 +1032,13 @@ SQL&gt; grant read,write on directory expdp_dir to test&#xFF1B;
     <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
     
 
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
     gitbook.start(config);
 });
 </script>
