@@ -23,5 +23,5 @@ SUMMARY.md编写如下：
 #### 基本命令
     gitbook init
     gitbook serve .
-    gitbook build --output=/tmp/gitbook
+    gitbook build . /tmp/gitbook
 
