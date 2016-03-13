@@ -1,0 +1,1027 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>grunt 构建工具 | 简介</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../JavaScript/cordova.html" />
+    
+    
+    <link rel="prev" href="../JavaScript/gulp.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.3"
+        data-chapter-title="grunt 构建工具"
+        data-filepath="JavaScript/grunt.md"
+        data-basepath=".."
+        data-revision="Sun Mar 13 2016 23:30:34 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="tools/index.html">
+            
+                
+                    <a href="../tools/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        常用命令集合
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="tools/linux.html">
+            
+                
+                    <a href="../tools/linux.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Linux命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="tools/git.html">
+            
+                
+                    <a href="../tools/git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Git命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="tools/gitbook.html">
+            
+                
+                    <a href="../tools/gitbook.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        GitBook
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="JavaScript/javascript.html">
+            
+                
+                    <a href="../JavaScript/javascript.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        JavaScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="JavaScript/bower.html">
+            
+                
+                    <a href="../JavaScript/bower.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        bower 客户端软件包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="JavaScript/gulp.html">
+            
+                
+                    <a href="../JavaScript/gulp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        gulp 自动化构建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="JavaScript/grunt.html">
+            
+                
+                    <a href="../JavaScript/grunt.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        grunt 构建工具
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="JavaScript/cordova.html">
+            
+                
+                    <a href="../JavaScript/cordova.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        cordova js访问硬件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="JavaScript/ionic.html">
+            
+                
+                    <a href="../JavaScript/ionic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        ionic 移动APP框架
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="JavaScript/ReactNative.html">
+            
+                
+                    <a href="../JavaScript/ReactNative.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        ReactNative 脸书框架
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="JavaScript/HybridApp.html">
+            
+                
+                    <a href="../JavaScript/HybridApp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        HybridApp 混合模式移动应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="JavaScript/meteor.html">
+            
+                
+                    <a href="../JavaScript/meteor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        meteor 构建web应用新技术
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="JavaScript/webflow.html">
+            
+                
+                    <a href="../JavaScript/webflow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        webflow 互联网开发
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="angular/index.html">
+            
+                
+                    <a href="../angular/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        AngularJS
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="db/index.html">
+            
+                
+                    <a href="../db/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        DB
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="db/oracle.html">
+            
+                
+                    <a href="../db/oracle.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        oracle
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="db/MongoDB.html">
+            
+                
+                    <a href="../db/MongoDB.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        MongoDB
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="db/memcache.html">
+            
+                
+                    <a href="../db/memcache.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        memcache
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="db/Mysql.html">
+            
+                
+                    <a href="../db/Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Mysql
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="db/redis.html">
+            
+                
+                    <a href="../db/redis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        redis
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="db/SQLite.html">
+            
+                
+                    <a href="../db/SQLite.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        SQLite
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="h5/index.html">
+            
+                
+                    <a href="../h5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        H5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="h5/H5.html">
+            
+                
+                    <a href="../h5/H5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        express
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="java/index.html">
+            
+                
+                    <a href="../java/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Java
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="java/eclipse.html">
+            
+                
+                    <a href="../java/eclipse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Eclipse IDE
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="java/jbpm.html">
+            
+                
+                    <a href="../java/jbpm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Jbpm工作流引擎
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="java/maven.html">
+            
+                
+                    <a href="../java/maven.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Maven 软件项目管理工具
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="java/servlet.html">
+            
+                
+                    <a href="../java/servlet.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        Servlet Java Web 技术的核心基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="java/SpringMVC.html">
+            
+                
+                    <a href="../java/SpringMVC.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        SpringMVC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="java/factory.html">
+            
+                
+                    <a href="../java/factory.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        设计模式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="php/index.html">
+            
+                
+                    <a href="../php/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        PHP
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="php/curl.html">
+            
+                
+                    <a href="../php/curl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        curl 传输工具
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="php/composer.html">
+            
+                
+                    <a href="../php/composer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        composer 依赖关系管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="php/swagger.html">
+            
+                
+                    <a href="../php/swagger.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        swagger API接口管理
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="node/index.html">
+            
+                
+                    <a href="../node/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        NodeJS
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="node/express.html">
+            
+                
+                    <a href="../node/express.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        express web应用开发框架
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="node/spm.html">
+            
+                
+                    <a href="../node/spm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        spm
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="bigtable/index.html">
+            
+                
+                    <a href="../bigtable/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        大数据
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" >
+            
+            <span><b>9.1.</b> openstack 云计算平台</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" >
+            
+            <span><b>9.2.</b> Hbase 分布式数据库</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="bigtable/hadoop.html">
+            
+                
+                    <a href="../bigtable/hadoop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        hadoop 分布式系统架构
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="server/index.html">
+            
+                
+                    <a href="../server/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Server
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="server/apache.html">
+            
+                
+                    <a href="../server/apache.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        apache
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="server/tomcat.html">
+            
+                
+                    <a href="../server/tomcat.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        tomcat for java
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="server/nginx.html">
+            
+                
+                    <a href="../server/nginx.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        nginx 高并发反向代理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="server/GeoServer.html">
+            
+                
+                    <a href="../server/GeoServer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        GeoServer 地图服务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="server/apache_ant.html">
+            
+                
+                    <a href="../server/apache_ant.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        apache Ant
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="server/digitalocean.html">
+            
+                
+                    <a href="../server/digitalocean.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        digitalocean
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" >
+            
+            <span><b>11.</b> 项目分析</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="project/r2.html">
+            
+                
+                    <a href="../project/r2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        r2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="end/index.html">
+            
+                
+                    <a href="../end/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        结束语
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >简介</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="grunt&#x57FA;&#x672C;&#x529F;&#x80FD;">grunt&#x57FA;&#x672C;&#x529F;&#x80FD;</h1>
+<p>&#x65B0;&#x5EFA;<em>package.json</em>&#x6587;&#x4EF6; </p>
+<blockquote>
+<pre><code>   {&quot;name&quot;: &quot;projectName&quot;, 
+     &quot;version&quot;: &quot;0.1.0&quot;, 
+     &quot;devDependencies&quot;: { 
+     &quot;grunt&quot;: &quot;~0.4.0&quot;, 
+     &quot;grunt-contrib-jshint&quot;: &quot;~0.1.1&quot;, 
+     &quot;grunt-contrib-uglify&quot;: &quot;~0.1.2&quot;, 
+     &quot;grunt-contrib-concat&quot;: &quot;~0.1.1&quot; 
+     } 
+ }
+</code></pre></blockquote>
+<p>&#x8F93;&#x5165;<code>npm install</code>&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x76F8;&#x5E94;&#x7684;nodejs&#x63D2;&#x4EF6;</p>
+<p>&#x65B0;&#x5EFA; <em>Gruntfile.js</em>&#x6587;&#x4EF6; 
+<code>grunt build</code> build
+&#x5C06;src&#x4E0B;&#x7684;test1.js&#x548C;test2.js&#x5408;&#x5E76;&#x5230;dest&#x4E0B;&#x7684;test.js&#x5E76;&#x538B;&#x7F29;&#x6210;test.min.js&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<pre><code>   module.exports = function(grunt) { // &#x914D;&#x7F6E; 
+    grunt.initConfig({ 
+        pkg : grunt.file.readJSON(&apos;package.json&apos;), 
+        concat : { 
+            domop : { 
+                src: [&apos;src/test1.js&apos;, &apos;src/test2.js&apos;], 
+                dest: &apos;dest/test.js&apos; 
+            } 
+        }, 
+        uglify : { 
+            options : { 
+                banner : &apos;/*! &lt;%= pkg.name %&gt; &lt;%= grunt.template.today(&quot;yyyy-mm-dd&quot;) %&gt; */\n&apos; 
+                }, 
+            build : { 
+                src : &apos;dest/test.js&apos;, 
+                dest : &apos;dest/test.min.js&apos; 
+                } 
+            } 
+    }); 
+    // &#x8F7D;&#x5165;concat&#x548C;uglify&#x63D2;&#x4EF6;&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x4E8E;&#x5408;&#x5E76;&#x548C;&#x538B;&#x7F29; 
+    grunt.loadNpmTasks(&apos;grunt-contrib-concat&apos;); 
+    grunt.loadNpmTasks(&apos;grunt-contrib-uglify&apos;); // &#x6CE8;&#x518C;&#x4EFB;&#x52A1;
+    grunt.registerTask(&apos;default&apos;, [&apos;concat&apos;, &apos;uglify&apos;]); };
+</code></pre></blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../JavaScript/gulp.html" class="navigation navigation-prev " aria-label="Previous page: gulp 自动化构建"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../JavaScript/cordova.html" class="navigation navigation-next " aria-label="Next page: cordova js访问硬件"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
