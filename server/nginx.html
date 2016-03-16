@@ -53,7 +53,7 @@
         data-chapter-title="nginx 高并发反向代理"
         data-filepath="server/nginx.md"
         data-basepath=".."
-        data-revision="Sun Mar 13 2016 23:30:34 GMT+0800 (中国标准时间)"
+        data-revision="Wed Mar 16 2016 19:58:03 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -710,16 +710,32 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="9.1" >
+        <li class="chapter " data-level="9.1" data-path="bigtable/openstack.html">
             
-            <span><b>9.1.</b> openstack 云计算平台</span>
+                
+                    <a href="../bigtable/openstack.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        openstack 云计算平台
+                    </a>
             
             
         </li>
     
-        <li class="chapter " data-level="9.2" >
+        <li class="chapter " data-level="9.2" data-path="bigtable/Hbase.html">
             
-            <span><b>9.2.</b> Hbase 分布式数据库</span>
+                
+                    <a href="../bigtable/Hbase.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        Hbase 分布式数据库
+                    </a>
             
             
         </li>
@@ -734,6 +750,51 @@
                             <b>9.3.</b>
                         
                         hadoop 分布式系统架构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="bigtable/storm.html">
+            
+                
+                    <a href="../bigtable/storm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Apache Storm
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="bigtable/hive.html">
+            
+                
+                    <a href="../bigtable/hive.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        Apache Hive
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="bigtable/Spark.html">
+            
+                
+                    <a href="../bigtable/Spark.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        Spark
                     </a>
             
             
@@ -982,7 +1043,7 @@ nginx -s reload //&#x91CD;&#x542F;
 </ul>
 </li>
 </ol>
-<h3 id="&#x4FE1;&#x53F7;&#x63A7;&#x5236;">&#x4FE1;&#x53F7;&#x63A7;&#x5236;</h3>
+<h5 id="&#x4FE1;&#x53F7;&#x63A7;&#x5236;">&#x4FE1;&#x53F7;&#x63A7;&#x5236;</h5>
 <ul>
 <li>HUP:&#x91CD;&#x542F;</li>
 <li>QUIT:&#x4ECE;&#x5BB9;&#x5173;&#x95ED;</li>
@@ -992,9 +1053,18 @@ nginx -s reload //&#x91CD;&#x542F;
 <li>USR2:&#x5E73;&#x6ED1;&#x5347;&#x7EA7;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;</li>
 <li>WINCH:&#x4ECE;&#x5BB9;&#x5173;&#x95ED;&#x5DE5;&#x4F5C;&#x8FDB;&#x7A0B;</li>
 </ul>
-<h3 id="nginxconf&#x914D;&#x7F6E;&#x6587;&#x4EF6;">nginx.conf&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<h5 id="nginxconf&#x914D;&#x7F6E;&#x6587;&#x4EF6;">nginx.conf&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h5>
 <p>&#x5DE5;&#x4F5C;&#x884D;&#x751F;&#x8FDB;&#x7A0B;&#x6570; &#x901A;&#x5E38;&#x4EE3;&#x8868;cpu&#x7684;&#x6838;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x6838;&#x6570;&#x7684;&#x4E24;&#x500D;<br>worker_processes  1;<br>&#x8BBE;&#x7F6E;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;<br>events {<br>    worker_connections  1024;<br>}<br>http {
     server { }<br>    server { }<br>} </p>
+<h5 id="nginx-&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x914D;&#x7F6E;">nginx &#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x914D;&#x7F6E;</h5>
+<p>nginx.conf&#x4E2D;<strong>log_format</strong>&#x6307;&#x4EE4;&#x5BF9;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x914D;&#x7F6E;  </p>
+<ul>
+<li>$remote_addr &#x5BA2;&#x6237;&#x7AEF;IP&#x5730;&#x5740;</li>
+<li>$remote_user &#x5BA2;&#x6237;&#x7AEF;&#x7528;&#x6237;</li>
+<li>$request &#x8BF7;&#x6C42;&#x7684;url</li>
+<li>$status &#x8BF7;&#x6C42;&#x72B6;&#x6001;</li>
+<li>....</li>
+</ul>
 
                     
                     </section>

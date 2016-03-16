@@ -53,7 +53,7 @@
         data-chapter-title="apache Ant"
         data-filepath="server/apache_ant.md"
         data-basepath=".."
-        data-revision="Sun Mar 13 2016 23:30:34 GMT+0800 (中国标准时间)"
+        data-revision="Wed Mar 16 2016 19:58:03 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -710,16 +710,32 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="9.1" >
+        <li class="chapter " data-level="9.1" data-path="bigtable/openstack.html">
             
-            <span><b>9.1.</b> openstack 云计算平台</span>
+                
+                    <a href="../bigtable/openstack.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        openstack 云计算平台
+                    </a>
             
             
         </li>
     
-        <li class="chapter " data-level="9.2" >
+        <li class="chapter " data-level="9.2" data-path="bigtable/Hbase.html">
             
-            <span><b>9.2.</b> Hbase 分布式数据库</span>
+                
+                    <a href="../bigtable/Hbase.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        Hbase 分布式数据库
+                    </a>
             
             
         </li>
@@ -734,6 +750,51 @@
                             <b>9.3.</b>
                         
                         hadoop 分布式系统架构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="bigtable/storm.html">
+            
+                
+                    <a href="../bigtable/storm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Apache Storm
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="bigtable/hive.html">
+            
+                
+                    <a href="../bigtable/hive.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        Apache Hive
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="bigtable/Spark.html">
+            
+                
+                    <a href="../bigtable/Spark.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        Spark
                     </a>
             
             
@@ -948,6 +1009,68 @@
 </blockquote>
 </li>
 </ul>
+<p>&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x65B0;&#x5EFA;build.xml&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;ant&#x547D;&#x4EE4;&#x6253;&#x5305;&#x9879;&#x76EE;</p>
+<pre><code class="lang-xml"><span class="hljs-pi">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>  
+
+<span class="hljs-comment">&lt;!-- &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x5DE5;&#x7A0B;&#xFF0C;&#x9ED8;&#x8BA4;&#x4EFB;&#x52A1;&#x4E3A;archive&#x3002; --&gt;</span>  
+<span class="hljs-tag">&lt;<span class="hljs-title">project</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;kibh&quot;</span> <span class="hljs-attribute">default</span>=<span class="hljs-value">&quot;archive&quot;</span> <span class="hljs-attribute">basedir</span>=<span class="hljs-value">&quot;.&quot;</span>&gt;</span>  
+    <span class="hljs-comment">&lt;!-- set properties name --&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-title">property</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;tomcat.lib&quot;</span>   <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;E:\tomcat\apache-tomcat-7.0.63-18084\lib&quot;</span> /&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-title">property</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;jre.lib&quot;</span>   <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;E:\jdk1.7.0_17\jre\lib&quot;</span> /&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- &#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#xFF0C;&#x6253;&#x6210;war&#x5305;&#x7684;&#x540D;&#x79F0;&#x3002; --&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">property</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;warFileName&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;kibh.war&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">property</span>&gt;</span>  
+
+    <span class="hljs-comment">&lt;!-- &#x5B9A;&#x4E49;&#x8DEF;&#x5F84;&#xFF0C;&#x7F16;&#x8BD1;java&#x6587;&#x4EF6;&#x65F6;&#x7528;&#x5230;&#x7684;jar&#x5305;&#x3002; --&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">path</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;project.lib&quot;</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-title">fileset</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${basedir}/webapp/WEB-INF/lib&quot;</span>&gt;</span>  
+            <span class="hljs-tag">&lt;<span class="hljs-title">include</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;**/*.jar&quot;</span>/&gt;</span>  
+        <span class="hljs-tag">&lt;/<span class="hljs-title">fileset</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">fileset</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${tomcat.lib}&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">include</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;*.jar&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">fileset</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">fileset</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${jre.lib}&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">include</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;**/*.jar&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">fileset</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">path</span>&gt;</span>  
+
+    <span class="hljs-comment">&lt;!-- &#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#xFF0C;&#x6E05;&#x7A7A;&#x4EFB;&#x52A1;&#xFF1A;&#x6E05;&#x7A7A;&#x539F;&#x6709;&#x7684;class&#x6587;&#x4EF6;&#xFF0C;&#x521B;&#x5EFA;&#x65B0;&#x7684;build&#x8DEF;&#x5F84;&#x3002; --&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">target</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;clean&quot;</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-title">delete</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${basedir}/build&quot;</span> /&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-title">mkdir</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${basedir}/build&quot;</span> /&gt;</span>  
+    <span class="hljs-tag">&lt;/<span class="hljs-title">target</span>&gt;</span>  
+
+    <span class="hljs-comment">&lt;!-- &#x5B9A;&#x4E49;&#x4EFB;&#x52A1;&#xFF0C;&#x7F16;&#x8BD1;src&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;java&#x6587;&#x4EF6;&#xFF0C;&#x7F16;&#x8BD1;&#x540E;&#x7684;class&#x6587;&#x4EF6;&#x653E;&#x5230;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x3002; --&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">target</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;compile&quot;</span> <span class="hljs-attribute">depends</span>=<span class="hljs-value">&quot;clean&quot;</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-title">javac</span> <span class="hljs-attribute">srcdir</span>=<span class="hljs-value">&quot;${basedir}/src&quot;</span> <span class="hljs-attribute">destdir</span>=<span class="hljs-value">&quot;${basedir}/build&quot;</span> <span class="hljs-attribute">includeantruntime</span>=<span class="hljs-value">&quot;false&quot;</span> <span class="hljs-attribute">encoding</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>  
+            <span class="hljs-tag">&lt;<span class="hljs-title">classpath</span> <span class="hljs-attribute">refid</span>=<span class="hljs-value">&quot;project.lib&quot;</span>&gt;</span>  
+            <span class="hljs-tag">&lt;/<span class="hljs-title">classpath</span>&gt;</span>  
+        <span class="hljs-tag">&lt;/<span class="hljs-title">javac</span>&gt;</span>  
+    <span class="hljs-tag">&lt;/<span class="hljs-title">target</span>&gt;</span>  
+
+    <span class="hljs-comment">&lt;!-- &#x5B9A;&#x4E49;&#x9ED8;&#x8BA4;&#x4EFB;&#x52A1;&#xFF0C;&#x5C06;class&#x6587;&#x4EF6;&#x96C6;&#x5408;&#x6210;jar&#x5305;&#x3002; --&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-title">target</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;archive&quot;</span> <span class="hljs-attribute">depends</span>=<span class="hljs-value">&quot;compile&quot;</span>&gt;</span>  
+        <span class="hljs-comment">&lt;!-- &#x5220;&#x9664;&#x539F;&#x6709;war&#x5305;&#x3002; --&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-title">delete</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${basedir}/${warFileName}&quot;</span> /&gt;</span>  
+        <span class="hljs-comment">&lt;!-- &#x5EFA;&#x7ACB;&#x65B0;war&#x5305;&#x3002; --&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-title">war</span> <span class="hljs-attribute">destfile</span>=<span class="hljs-value">&quot;${basedir}/${warFileName}&quot;</span> <span class="hljs-attribute">webxml</span>=<span class="hljs-value">&quot;${basedir}/Webapp/WEB-INF/web.xml&quot;</span>&gt;</span>  
+            <span class="hljs-comment">&lt;!-- &#x5C06;&#x975E;jar&#x548C;&#x975E;class&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;war&#x5305;&#x7684;&#x5BF9;&#x5E94;&#x8DEF;&#x5F84;&#x4E0B;&#x3002; --&gt;</span>  
+            <span class="hljs-tag">&lt;<span class="hljs-title">fileset</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${basedir}/webapp&quot;</span>&gt;</span>  
+                <span class="hljs-tag">&lt;<span class="hljs-title">include</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;**/**.*&quot;</span> /&gt;</span>  
+                <span class="hljs-tag">&lt;<span class="hljs-title">exclude</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;**/*.jar&quot;</span>/&gt;</span>  
+                <span class="hljs-tag">&lt;<span class="hljs-title">exclude</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;**/*.class&quot;</span>/&gt;</span>  
+            <span class="hljs-tag">&lt;/<span class="hljs-title">fileset</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">fileset</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${basedir}/webapp/WEB-INF/classes&quot;</span>&gt;</span>  
+                <span class="hljs-tag">&lt;<span class="hljs-title">include</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5E93;/**.*&quot;</span> /&gt;</span> 
+            <span class="hljs-tag">&lt;/<span class="hljs-title">fileset</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- &#x5C06;jar&#x548C;class&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;war&#x5305;&#x7684;&#x5BF9;&#x5E94;&#x8DEF;&#x5F84;&#x4E0B;&#x3002; --&gt;</span>  
+            <span class="hljs-tag">&lt;<span class="hljs-title">lib</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${basedir}/webapp/WEB-INF/lib&quot;</span> /&gt;</span>  
+            <span class="hljs-tag">&lt;<span class="hljs-title">classes</span> <span class="hljs-attribute">dir</span>=<span class="hljs-value">&quot;${basedir}/build&quot;</span> /&gt;</span>  
+        <span class="hljs-tag">&lt;/<span class="hljs-title">war</span>&gt;</span>  
+    <span class="hljs-tag">&lt;/<span class="hljs-title">target</span>&gt;</span>  
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">project</span>&gt;</span>
+</code></pre>
 
                     
                     </section>
