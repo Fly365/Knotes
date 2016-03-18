@@ -80,3 +80,10 @@
 
 来源：[http://blog.csdn.net/giianhui/article/details/7788550](http://blog.csdn.net/giianhui/article/details/7788550)
 
+
+#### 表空间
+
+查看表空间是否为自动扩展  
+    sec@orcl> select tablespace_name,file_name,autoextensible from dba_data_files where tablespace_name = 'SEC_D';
+修改表空间为自动扩展  
+    sec@orcl> alter database datafile '/u01/app/oracle/oradata/orcl/sec_d01.dbf' autoextend on;  

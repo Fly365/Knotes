@@ -1,7 +1,10 @@
 [TOC]
-# hadoop 安装与配置
+# Hadoop 
+
+一个由Apache基金会所开发的分布式系统基础架构
 
 #### ubuntu下安装hadoop
+
 1.安装jdk
 `apt-get install java-6-openjdk`
 2.设置环境变量
@@ -19,6 +22,7 @@
 		cd /hadoop-1.2.1/conf/ 
 
 #### 配置hadoop
+
 *配置config中的 mapred.site.xml core.site.xml hdfs.site.xml hadoop-env.sh*
 
 1.hadoop-env.sh

@@ -12,6 +12,7 @@
     cp xx xx.bak                            //复制文件  
     cp -rfp /root/temp/xx  /usr/local       //将xx复制(替换)到/usr/local下面  
     touch xx                                //新建文件
+    su username                             //切换用户
     
 #### lrzsz 上传下载命令
 
@@ -24,7 +25,14 @@
     ifconfig eth0 192.168.0.5 netmask 255.255.255.0   //设置网卡eth0的ip地址,子网掩码
     ifconfig eth0:1 192.168.0.6 broadcast 192.168.1.255 netmask 255.255.255.0 //虚拟主机ip设置    
     
-    
+#### 查看linux版本信息
+
+`uname -a` 电脑以及操作系统的相关信息  
+`cat /proc/version`  正在运行的内核版本  
+`cat /etc/issue`  发行版本信息  red hat enterprise linux server 6.5  
+`lsb_release -a`   (适用于所有的linux，包括Redhat、SuSE、Debian等发行版，但是在debian下要安装lsb)   
+
+
 #### screen工具命令
 
 	screen -S screenName

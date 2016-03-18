@@ -1,0 +1,27 @@
+{
+  "name": "knotes",
+  "version": "1.0.0",
+  "description": "*记录学习中的点点滴滴...*",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-gh-pages": "^0.5.4",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxg3053/Knotes.git"
+  },
+  "keywords": [
+    "knotes"
+  ],
+  "author": "kenfo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xxg3053/Knotes/issues"
+  },
+  "homepage": "https://github.com/xxg3053/Knotes#readme"
+}

@@ -43,7 +43,7 @@ window环境和Linux环境有所不同
  + 第二种方法
   * kill -HUP pid
 
-### 信号控制
+##### 信号控制
 
 * HUP:重启
 * QUIT:从容关闭
@@ -53,7 +53,7 @@ window环境和Linux环境有所不同
 * USR2:平滑升级可执行文件
 * WINCH:从容关闭工作进程
 
-### nginx.conf配置文件
+##### nginx.conf配置文件
 
 工作衍生进程数 通常代表cpu的核数，或者核数的两倍  
 worker_processes  1;  
@@ -65,6 +65,16 @@ http {
     server { }  
     server { }  
 } 
+
+##### nginx 日志文件配置 
+
+nginx.conf中**log_format**指令对日志文件进行配置  
+
+* $remote_addr 客户端IP地址
+* $remote_user 客户端用户
+* $request 请求的url
+* $status 请求状态
+* ....
 
 
 
