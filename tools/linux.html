@@ -53,7 +53,7 @@
         data-chapter-title="Linux命令"
         data-filepath="tools/linux.md"
         data-basepath=".."
-        data-revision="Wed Mar 16 2016 19:58:03 GMT+0800 (中国标准时间)"
+        data-revision="Fri Mar 18 2016 13:24:55 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -138,6 +138,21 @@
                             <b>1.3.</b>
                         
                         GitBook
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="tools/byethost.html">
+            
+                
+                    <a href="../tools/byethost.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        byethost 免费云空间
                     </a>
             
             
@@ -335,14 +350,29 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.1" data-path="db/oracle.html">
+        <li class="chapter " data-level="4.1" data-path="db/sql.html">
+            
+                
+                    <a href="../db/sql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        sql
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="db/oracle.html">
             
                 
                     <a href="../db/oracle.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.1.</b>
+                            <b>4.2.</b>
                         
                         oracle
                     </a>
@@ -350,14 +380,14 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="db/MongoDB.html">
+        <li class="chapter " data-level="4.3" data-path="db/MongoDB.html">
             
                 
                     <a href="../db/MongoDB.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.2.</b>
+                            <b>4.3.</b>
                         
                         MongoDB
                     </a>
@@ -365,14 +395,14 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="db/memcache.html">
+        <li class="chapter " data-level="4.4" data-path="db/memcache.html">
             
                 
                     <a href="../db/memcache.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.3.</b>
+                            <b>4.4.</b>
                         
                         memcache
                     </a>
@@ -380,14 +410,14 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4" data-path="db/Mysql.html">
+        <li class="chapter " data-level="4.5" data-path="db/Mysql.html">
             
                 
                     <a href="../db/Mysql.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.4.</b>
+                            <b>4.5.</b>
                         
                         Mysql
                     </a>
@@ -395,14 +425,14 @@
             
         </li>
     
-        <li class="chapter " data-level="4.5" data-path="db/redis.html">
+        <li class="chapter " data-level="4.6" data-path="db/redis.html">
             
                 
                     <a href="../db/redis.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.5.</b>
+                            <b>4.6.</b>
                         
                         redis
                     </a>
@@ -410,14 +440,14 @@
             
         </li>
     
-        <li class="chapter " data-level="4.6" data-path="db/SQLite.html">
+        <li class="chapter " data-level="4.7" data-path="db/SQLite.html">
             
                 
                     <a href="../db/SQLite.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.6.</b>
+                            <b>4.7.</b>
                         
                         SQLite
                     </a>
@@ -911,6 +941,21 @@
             
         </li>
     
+        <li class="chapter " data-level="10.7" data-path="server/TinyCore.html">
+            
+                
+                    <a href="../server/TinyCore.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.7.</b>
+                        
+                        TinyCore 迷你linux发行版本
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -1005,6 +1050,7 @@ tar -zxvf xxx.tar.gz -c /root/temp      //&#x89E3;&#x538B;&#x5230;xx&#x5730;&#x6
 cp xx xx.bak                            //&#x590D;&#x5236;&#x6587;&#x4EF6;  
 cp -rfp /root/temp/xx  /usr/local       //&#x5C06;xx&#x590D;&#x5236;(&#x66FF;&#x6362;)&#x5230;/usr/local&#x4E0B;&#x9762;  
 touch xx                                //&#x65B0;&#x5EFA;&#x6587;&#x4EF6;
+su username                             //&#x5207;&#x6362;&#x7528;&#x6237;
 </code></pre><h4 id="lrzsz-&#x4E0A;&#x4F20;&#x4E0B;&#x8F7D;&#x547D;&#x4EE4;">lrzsz &#x4E0A;&#x4F20;&#x4E0B;&#x8F7D;&#x547D;&#x4EE4;</h4>
 <pre><code>yum install lrzsz  //&#x5B89;&#x88C5;
 rz filename //&#x4E0A;&#x4F20;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;
@@ -1013,7 +1059,9 @@ sz filename //&#x4E0B;&#x8F7D;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;
 <pre><code>ifconfig    //&#x67E5;&#x770B;ip  
 ifconfig eth0 192.168.0.5 netmask 255.255.255.0   //&#x8BBE;&#x7F6E;&#x7F51;&#x5361;eth0&#x7684;ip&#x5730;&#x5740;,&#x5B50;&#x7F51;&#x63A9;&#x7801;
 ifconfig eth0:1 192.168.0.6 broadcast 192.168.1.255 netmask 255.255.255.0 //&#x865A;&#x62DF;&#x4E3B;&#x673A;ip&#x8BBE;&#x7F6E;    
-</code></pre><h4 id="screen&#x5DE5;&#x5177;&#x547D;&#x4EE4;">screen&#x5DE5;&#x5177;&#x547D;&#x4EE4;</h4>
+</code></pre><h4 id="&#x67E5;&#x770B;linux&#x7248;&#x672C;&#x4FE1;&#x606F;">&#x67E5;&#x770B;linux&#x7248;&#x672C;&#x4FE1;&#x606F;</h4>
+<p><code>uname -a</code> &#x7535;&#x8111;&#x4EE5;&#x53CA;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;<br><code>cat /proc/version</code>  &#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x5185;&#x6838;&#x7248;&#x672C;<br><code>cat /etc/issue</code>  &#x53D1;&#x884C;&#x7248;&#x672C;&#x4FE1;&#x606F;  red hat enterprise linux server 6.5<br><code>lsb_release -a</code>   (&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x7684;linux&#xFF0C;&#x5305;&#x62EC;Redhat&#x3001;SuSE&#x3001;Debian&#x7B49;&#x53D1;&#x884C;&#x7248;&#xFF0C;&#x4F46;&#x662F;&#x5728;debian&#x4E0B;&#x8981;&#x5B89;&#x88C5;lsb)   </p>
+<h4 id="screen&#x5DE5;&#x5177;&#x547D;&#x4EE4;">screen&#x5DE5;&#x5177;&#x547D;&#x4EE4;</h4>
 <pre><code>screen -S screenName
 ctrl+a+d //&#x6700;&#x5C0F;&#x5316;
 screen -ls //&#x67E5;&#x770B;

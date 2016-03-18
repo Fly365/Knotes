@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>常用命令集合 | 简介</title>
+        <title>sql | 简介</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../tools/linux.html" />
+    <link rel="next" href="../db/oracle.html" />
     
     
-    <link rel="prev" href="../index.html" />
+    <link rel="prev" href="../db/index.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="1"
-        data-chapter-title="常用命令集合"
-        data-filepath="tools/README.md"
+        data-level="4.1"
+        data-chapter-title="sql"
+        data-filepath="db/sql.md"
         data-basepath=".."
         data-revision="Fri Mar 18 2016 13:24:55 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -82,7 +82,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1" data-path="tools/index.html">
+        <li class="chapter " data-level="1" data-path="tools/index.html">
             
                 
                     <a href="../tools/index.html">
@@ -350,7 +350,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.1" data-path="db/sql.html">
+        <li class="chapter active" data-level="4.1" data-path="db/sql.html">
             
                 
                     <a href="../db/sql.html">
@@ -1037,7 +1037,36 @@
                 
                     <section class="normal" id="section-">
                     
-                        
+                        <h1 id="sql">SQL</h1>
+<h5 id="&#x5E38;&#x7528;&#x8BED;&#x53E5;">&#x5E38;&#x7528;&#x8BED;&#x53E5;</h5>
+<p>&#x521B;&#x5EFA;&#x8868;&#x7A7A;&#x95F4;&#xFF1A;  </p>
+<pre><code class="lang-sql"><span class="hljs-operator"><span class="hljs-keyword">create</span> <span class="hljs-keyword">tablespace</span> KDBASE_DATA <span class="hljs-keyword">datafile</span><span class="hljs-string">&apos;/ora/oracle/oradata/UAS/KDBASE_DATA01.dbf&apos;</span><span class="hljs-keyword">size</span> <span class="hljs-number">512</span><span class="hljs-keyword">M</span> <span class="hljs-keyword">autoextend</span> <span class="hljs-keyword">on</span>;</span>
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x7528;&#x6237;  </p>
+<pre><code class="lang-sql"><span class="hljs-operator"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">user</span> KDBASE <span class="hljs-keyword">CASCADE</span>;</span>
+
+<span class="hljs-comment">-- Create the user </span>
+<span class="hljs-operator"><span class="hljs-keyword">create</span> <span class="hljs-keyword">user</span> KDBASE
+<span class="hljs-keyword">identified</span> <span class="hljs-keyword">by</span> kdbase
+  <span class="hljs-keyword">default</span> <span class="hljs-keyword">tablespace</span> KDBASE_DATA
+  <span class="hljs-keyword">temporary</span> <span class="hljs-keyword">tablespace</span> TEMP
+  profile <span class="hljs-keyword">DEFAULT</span>;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">connect</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">resource</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-comment">-- Grant/Revoke system privileges </span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">create</span> cluster <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">create</span> <span class="hljs-keyword">procedure</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">create</span> <span class="hljs-keyword">synonym</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">create</span> <span class="hljs-keyword">trigger</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">create</span> <span class="hljs-keyword">view</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">delete</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">drop</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">insert</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">select</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">unlimited</span> <span class="hljs-keyword">tablespace</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+<span class="hljs-operator"><span class="hljs-keyword">grant</span> <span class="hljs-keyword">update</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">table</span> <span class="hljs-keyword">to</span> KDBASE;</span>
+</code></pre>
+
                     
                     </section>
                 
@@ -1047,10 +1076,10 @@
         </div>
 
         
-        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: 简介"><i class="fa fa-angle-left"></i></a>
+        <a href="../db/index.html" class="navigation navigation-prev " aria-label="Previous page: DB"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../tools/linux.html" class="navigation navigation-next " aria-label="Next page: Linux命令"><i class="fa fa-angle-right"></i></a>
+        <a href="../db/oracle.html" class="navigation navigation-next " aria-label="Next page: oracle"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
