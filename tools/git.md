@@ -44,3 +44,6 @@
 `git branch xxxx` 创建分支
 
 `git push origin gh-pages:gh-pages`  提交本地gh-pages分支作为远程的gh-pages分支
+
+`git config --global user.name [username]` 设置全局用户名
+`git config --global user.email [email]`

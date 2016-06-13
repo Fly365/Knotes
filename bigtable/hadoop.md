@@ -75,3 +75,9 @@
 
 1.当配置环境变量文件失败导致大部分命令失效时
 `export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin`
+
+
+
+hadoop2.6.3集群配置
+
+教程  http://www.cnblogs.com/Lawson/p/5149537.html

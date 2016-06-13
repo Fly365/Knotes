@@ -5,8 +5,10 @@
 一些在开发部署中常用到的[Linux命令](http://xxg3053.github.io/Knotes/tools/linux.html),还有一些常用的工具说明,当然最主要的是当做笔记来记录下容易忘记的**东西**！  简介中会提到自己在学习和工作中常用到的一些[软件](http://xxg3053.github.io/Knotes/index.html#常用工具)和写该笔记用到的[MarkDown](http://www.bluesdream.com/blog/markdown-cheatsheet-syntax-manual.html)语法。
 
 - - -
-### 发布
-编辑后使用`gitbook serve`预览，然后运行`gulp`命令将_book目录下的文件上传到gh-pages分支中
+###发布
+1. 安装gitbook `npm install -g gitbook  npm install -g gitbook-cli`
+2. `gitbook -V`
+3. 编辑后使用`gitbook serve`预览，然后运行`gulp`命令将_book目录下的文件上传到gh-pages分支中
 
 ###常用工具
  
@@ -25,7 +27,7 @@
 * VISIO                         画流程图
 * Axure RP                      做原型
 * ConEmu                        window下cmd替代品
-* TortoiseSVN                   svn客户端
+* TortoiseSVN                   svn客户端 
 
 
 ==========

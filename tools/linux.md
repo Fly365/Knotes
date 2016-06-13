@@ -49,3 +49,10 @@
 	sudo chmod 700 ××× （只有所有者有读和写以及执行的权限）
 	sudo chmod 666 ××× （每个人都有读和写的权限）
 	sudo chmod 777 ××× （每个人都有读和写以及执行的权限）
+
+## 文件同步rsync
+
+    yum install -y rsync
+    chkconfig rsync --list
+    chkconfig rsync on 
+    rsync -zvrtopg -progress -e 'ssh -p 端口号' root@192.xx.xx.xx:/文件目录/  本机的目录地址

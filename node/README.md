@@ -1,6 +1,32 @@
 # nodejs
 
-## npm 
+## node更新
+
+window版本直接下载然后安装在之前安装的目录下覆盖即可  
+linux 使用命令n安装 
+    `npm install -g n`  
+    `n latest`
+
+## 常用模块
+
+#### npm  
+
+1、关闭npm的https
+
+    npm config set strict-ssl false
+    
+2、设置npm的获取地址
+
+    npm config set registry "http://registry.npmjs.org/"
+
+###### 设置npm安装包的路径：
+
+    `npm config ls` 查看npm配置，其中prefix配置就是安装路径   
+    `npm config set prefix "E:\nodejs"`   
+
+###### 设置代理
+
+[淘宝NPM镜像](http://npm.taobao.org/),使用cnpm命令
 
 * 通过 config 配置指向国内镜像源 (临时)
 `npm config set registry http://registry.cnpmjs.org `//配置指向源
@@ -16,9 +42,9 @@
 * 更新npm库
 `npm update -g`
 
-* 更新Nodejs自身
-`npm install -g n`
-`n latest`
+安装spm包失败时候：
+     npm config set proxy null 将代理设置为空  
+
 
 ## 模块的流程
 
