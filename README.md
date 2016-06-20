@@ -30,6 +30,12 @@
 * TortoiseSVN                   svn客户端 
 
 
+## 相关概念
+
+RPC: Remote Procedure Call Protocol 远程过程调用协议
+SOA: Service-Oriented Architecture  面向服务的体系结构
+ESB: Enterprise Service Bus 企业服务总线
+
 ==========
 
 ## MarkDown
