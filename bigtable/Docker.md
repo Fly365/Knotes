@@ -1,53 +1,53 @@
 # Docker
-  DockerÊÇÒ»¸ö¿ªÔ´µÄÓ¦ÓÃÈİÆ÷ÒıÇæ£¬ÈÃ¿ª·¢Õß¿ÉÒÔ´ò°üËûÃÇµÄÓ¦ÓÃÒÔ¼°ÒÀÀµ°üµ½Ò»¸ö¿ÉÒÆÖ²µÄÈİÆ÷ÖĞ£¬È»ºó·¢²¼µ½ÈÎºÎÁ÷ĞĞµÄ Linux »úÆ÷ÉÏ£¬Ò²¿ÉÒÔÊµÏÖĞéÄâ»¯
+  Dockeræ˜¯ä¸€ä¸ªå¼€æºçš„åº”ç”¨å®¹å™¨å¼•æ“ï¼Œè®©å¼€å‘è€…å¯ä»¥æ‰“åŒ…ä»–ä»¬çš„åº”ç”¨ä»¥åŠä¾èµ–åŒ…åˆ°ä¸€ä¸ªå¯ç§»æ¤çš„å®¹å™¨ä¸­ï¼Œç„¶åå‘å¸ƒåˆ°ä»»ä½•æµè¡Œçš„ Linux æœºå™¨ä¸Šï¼Œä¹Ÿå¯ä»¥å®ç°è™šæ‹ŸåŒ–
   
  
 
-## °²×°
+## å®‰è£…
 
-°²×°½Ì³Ì:https://docs.docker.com/engine/installation/linux/ubuntulinux/
-**ubuntu 16.04 64Î»£¬Ä¬ÈÏ°²×°**
+å®‰è£…æ•™ç¨‹:https://docs.docker.com/engine/installation/linux/ubuntulinux/
+**ubuntu 16.04 64ä½ï¼Œé»˜è®¤å®‰è£…**
 
-1.Ìí¼ÓGPG key£º
+1.æ·»åŠ GPG keyï¼š
 
 	$sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 
-2.Ìí¼ÓÔ´
+2.æ·»åŠ æº
 
-	ĞÂ½¨ÎÄ¼ş£º/etc/apt/sources.list.d/docker.list£¬ÔÚÀïÃæÌí¼ÓÄÚÈİ£º  
+	æ–°å»ºæ–‡ä»¶ï¼š/etc/apt/sources.list.d/docker.listï¼Œåœ¨é‡Œé¢æ·»åŠ å†…å®¹ï¼š  
 	deb https://apt.dockerproject.org/repo ubuntu-xenial main
 
-3.¸üĞÂÔ´
+3.æ›´æ–°æº
 
 	$ sudo apt-get update
 
-4.°²×°Óë²âÊÔ
+4.å®‰è£…ä¸æµ‹è¯•
 
 	$ sudo apt-get install docker-engine
 	$ sudo service docker start 
 	$ sudo docker run hello-world
 
-5. ÅäÖÃ¿ª»úÆô¶¯
+5. é…ç½®å¼€æœºå¯åŠ¨
 
 	$ sudo systemctl enable docker
 
 	
-## ÃüÁî
+## å‘½ä»¤
 
-#### Docker·şÎñÏà¹ØÃüÁî
+#### DockeræœåŠ¡ç›¸å…³å‘½ä»¤
 
-	#service docker start    //Æô¶¯
-	#service docker restart  //ÖØÆô
-	#service docker stop    //Í£Ö¹
-	Docker·şÎñ¶ÔÓ¦µÄ°æ±¾²é¿´
+	#service docker start    //å¯åŠ¨
+	#service docker restart  //é‡å¯
+	#service docker stop    //åœæ­¢
+	DockeræœåŠ¡å¯¹åº”çš„ç‰ˆæœ¬æŸ¥çœ‹
 	# sudo docker version
-	Docker»·¾³²é¿´
+	Dockerç¯å¢ƒæŸ¥çœ‹
 	#sudo docker info
 	
-#### DockerÃüÁî°ïÖú
+#### Dockerå‘½ä»¤å¸®åŠ©
 
-	#sudo docker  //²é¿´dockerµÄËùÓĞÃüÁî
-	#sudo docker command --help  //²é¿´µ¥¸ödockerÃüÁîµÄ°ïÖú£¬Èçdocker ru--help
+	#sudo docker  //æŸ¥çœ‹dockerçš„æ‰€æœ‰å‘½ä»¤
+	#sudo docker command --help  //æŸ¥çœ‹å•ä¸ªdockerå‘½ä»¤çš„å¸®åŠ©ï¼Œå¦‚docker ru--help
 	
-#### DockerÈİÆ÷Ïà¹ØÃüÁî
+#### Dockerå®¹å™¨ç›¸å…³å‘½ä»¤
 
