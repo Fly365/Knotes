@@ -1,0 +1,1185 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Kafka 消息系统 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Metaq.html" />
+    
+    
+    <link rel="prev" href="Flume.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">学习内容</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../tools/">
+            
+                <a href="../tools/">
+            
+                    
+                    常用命令集合
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../tools/linux.html">
+            
+                <a href="../tools/linux.html">
+            
+                    
+                    Linux命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../tools/git.html">
+            
+                <a href="../tools/git.html">
+            
+                    
+                    Git命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../tools/gitbook.html">
+            
+                <a href="../tools/gitbook.html">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../tools/byethost.html">
+            
+                <a href="../tools/byethost.html">
+            
+                    
+                    byethost 免费云空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../JavaScript/javascript.html">
+            
+                <a href="../JavaScript/javascript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../JavaScript/bower.html">
+            
+                <a href="../JavaScript/bower.html">
+            
+                    
+                    bower 客户端软件包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../JavaScript/gulp.html">
+            
+                <a href="../JavaScript/gulp.html">
+            
+                    
+                    gulp 自动化构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../JavaScript/grunt.html">
+            
+                <a href="../JavaScript/grunt.html">
+            
+                    
+                    grunt 构建工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../JavaScript/cordova.html">
+            
+                <a href="../JavaScript/cordova.html">
+            
+                    
+                    cordova js访问硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../JavaScript/ionic.html">
+            
+                <a href="../JavaScript/ionic.html">
+            
+                    
+                    ionic 移动APP框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../JavaScript/ReactNative.html">
+            
+                <a href="../JavaScript/ReactNative.html">
+            
+                    
+                    ReactNative 脸书框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../JavaScript/HybridApp.html">
+            
+                <a href="../JavaScript/HybridApp.html">
+            
+                    
+                    HybridApp 混合模式移动应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../JavaScript/meteor.html">
+            
+                <a href="../JavaScript/meteor.html">
+            
+                    
+                    meteor 构建web应用新技术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../JavaScript/webflow.html">
+            
+                <a href="../JavaScript/webflow.html">
+            
+                    
+                    webflow 互联网开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../angular/">
+            
+                <a href="../angular/">
+            
+                    
+                    AngularJS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../angular/">
+            
+                <a href="../angular/">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../angular/">
+            
+                <a href="../angular/">
+            
+                    
+                    基本说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../db/">
+            
+                <a href="../db/">
+            
+                    
+                    DB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../db/sql.html">
+            
+                <a href="../db/sql.html">
+            
+                    
+                    sql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../db/oracle.html">
+            
+                <a href="../db/oracle.html">
+            
+                    
+                    oracle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../db/MongoDB.html">
+            
+                <a href="../db/MongoDB.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../db/memcache.html">
+            
+                <a href="../db/memcache.html">
+            
+                    
+                    memcache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../db/Mysql.html">
+            
+                <a href="../db/Mysql.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../db/redis.html">
+            
+                <a href="../db/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../db/SQLite.html">
+            
+                <a href="../db/SQLite.html">
+            
+                    
+                    SQLite
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../h5/">
+            
+                <a href="../h5/">
+            
+                    
+                    H5
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../h5/H5.html">
+            
+                <a href="../h5/H5.html">
+            
+                    
+                    express
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../java/">
+            
+                <a href="../java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../java/eclipse.html">
+            
+                <a href="../java/eclipse.html">
+            
+                    
+                    Eclipse IDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../java/jbpm.html">
+            
+                <a href="../java/jbpm.html">
+            
+                    
+                    Jbpm工作流引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../java/maven.html">
+            
+                <a href="../java/maven.html">
+            
+                    
+                    Maven 软件项目管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.4" data-path="../java/servlet.html">
+            
+                <a href="../java/servlet.html">
+            
+                    
+                    Servlet Java Web 技术的核心基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.5" data-path="../java/SpringMVC.html">
+            
+                <a href="../java/SpringMVC.html">
+            
+                    
+                    SpringMVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.6" data-path="../java/factory.html">
+            
+                <a href="../java/factory.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../php/">
+            
+                <a href="../php/">
+            
+                    
+                    PHP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../php/curl.html">
+            
+                <a href="../php/curl.html">
+            
+                    
+                    curl 传输工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../php/composer.html">
+            
+                <a href="../php/composer.html">
+            
+                    
+                    composer 依赖关系管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../php/swagger.html">
+            
+                <a href="../php/swagger.html">
+            
+                    
+                    swagger API接口管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../node/">
+            
+                <a href="../node/">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../node/express.html">
+            
+                <a href="../node/express.html">
+            
+                    
+                    express web应用开发框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="../node/spm.html">
+            
+                <a href="../node/spm.html">
+            
+                    
+                    spm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    大数据
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="openstack.html">
+            
+                <a href="openstack.html">
+            
+                    
+                    openstack 云计算平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.2" data-path="Hbase.html">
+            
+                <a href="Hbase.html">
+            
+                    
+                    Hbase 分布式数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.3" data-path="hadoop.html">
+            
+                <a href="hadoop.html">
+            
+                    
+                    hadoop 分布式系统架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.4" data-path="storm.html">
+            
+                <a href="storm.html">
+            
+                    
+                    Apache Storm 实时计算系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.5" data-path="hive.html">
+            
+                <a href="hive.html">
+            
+                    
+                    Apache Hive 数据仓库工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.6" data-path="Spark.html">
+            
+                <a href="Spark.html">
+            
+                    
+                    Spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.7" data-path="Flume.html">
+            
+                <a href="Flume.html">
+            
+                    
+                    Flume 实时日志收集系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.9.8" data-path="kafka.html">
+            
+                <a href="kafka.html">
+            
+                    
+                    Kafka 消息系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.9" data-path="Metaq.html">
+            
+                <a href="Metaq.html">
+            
+                    
+                    Metaq 消息中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.10" data-path="Zookeeper.html">
+            
+                <a href="Zookeeper.html">
+            
+                    
+                    Zookeeper 协调服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.11" data-path="Swoole.html">
+            
+                <a href="Swoole.html">
+            
+                    
+                    Swoole php通信引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../server/">
+            
+                <a href="../server/">
+            
+                    
+                    Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="../server/apache.html">
+            
+                <a href="../server/apache.html">
+            
+                    
+                    apache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.2" data-path="../server/tomcat.html">
+            
+                <a href="../server/tomcat.html">
+            
+                    
+                    tomcat for java
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.3" data-path="../server/nginx.html">
+            
+                <a href="../server/nginx.html">
+            
+                    
+                    nginx 高并发反向代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.4" data-path="../server/GeoServer.html">
+            
+                <a href="../server/GeoServer.html">
+            
+                    
+                    GeoServer 地图服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.5" data-path="../server/apache_ant.html">
+            
+                <a href="../server/apache_ant.html">
+            
+                    
+                    apache Ant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.6" data-path="../server/digitalocean.html">
+            
+                <a href="../server/digitalocean.html">
+            
+                    
+                    digitalocean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.7" data-path="../server/TinyCore.html">
+            
+                <a href="../server/TinyCore.html">
+            
+                    
+                    TinyCore 迷你linux发行版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" >
+            
+                <span>
+            
+                    
+                    项目分析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.11.1" data-path="../project/r2.html">
+            
+                <a href="../project/r2.html">
+            
+                    
+                    r2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../end/">
+            
+                <a href="../end/">
+            
+                    
+                    结束语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Kafka 消息系统</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="kafka">Kafka</h1>
+<p> Kafka&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x3001;&#x53EF;&#x5206;&#x533A;&#x7684;&#x3001;&#x53EF;&#x590D;&#x5236;&#x7684;&#x6D88;&#x606F;&#x7CFB;&#x7EDF;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x666E;&#x901A;&#x6D88;&#x606F;&#x7CFB;&#x7EDF;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x5177;&#x6709;&#x81EA;&#x5DF1;&#x72EC;&#x7279;&#x7684;&#x8BBE;&#x8BA1;&#x3002;</p>
+<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<ol>
+<li>&#x4E0B;&#x8F7D;kafka&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305; &#x89E3;&#x538B;&#x5230;/usr/local&#x4E0B;&#x9762;</li>
+<li>&#x542F;&#x52A8;zookeeper 
+ bin/zookeeper-server-start.sh config/zookeeper.properties &amp;</li>
+<li>&#x542F;&#x52A8;kafka&#x670D;&#x52A1;
+ bin/kafka-server-start.sh config/server.properties &amp;</li>
+<li>&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x6210;&#x529F;<ol>
+<li>&#x8FD0;&#x884C;producer
+ bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test</li>
+<li>&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x7EC8;&#x7AEF;&#x4E2D;&#x8FD0;&#x884C;consumer
+ bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic test --from-beginning </li>
+<li>&#x5728;producer&#x4E2D;&#x8F93;&#x5165;&#x5B57;&#x7B26;&#xFF0C;&#x5728;consumer&#x4E2D;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x51FA;&#x6765;</li>
+</ol>
+</li>
+</ol>
+<h2 id="&#x76F8;&#x5173;&#x95EE;&#x9898;">&#x76F8;&#x5173;&#x95EE;&#x9898;</h2>
+<p> INFO Got user-level KeeperException when processing sessionid:0x154e7a6aaa60002 type:create cxid:0x1 zxid:0x2c txntype:-1 reqpath:n/a Error Path:/consumers Error:KeeperErrorCode = NodeExists for /consumers (org.apache.zookeeper.server.PrepRequestProcessor)
+[2016-05-25 19:24:25,603] INFO Got user-level KeeperException when processing sessionid:0x154e7a6aaa60002 type:create cxid:0x2 zxid:0x2d txntype:-1 reqpath:n/a Error Path:/consumers/group Error:KeeperErrorCode = NodeExists for /consumers/group (org.apache.zookeeper.server.PrepRequestProcessor)</p>
+<p>&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;&#x914D;&#x7F6E;hosts&#x6587;&#x4EF6; &#x505A;zookeeper&#x670D;&#x52A1;&#x5668;&#x7684;&#x6620;&#x5C04;&#x914D;&#x7F6E;
+host.name = 10.10.11.191
+advertised.host.name = 10.10.11.191</p>
+<h2 id="flume-ngkafkastormhdfs-&#x5B9E;&#x65F6;&#x7CFB;&#x7EDF;&#x7EC4;&#x5408;">flume-ng+Kafka+Storm+HDFS &#x5B9E;&#x65F6;&#x7CFB;&#x7EDF;&#x7EC4;&#x5408;</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Flume.html" class="navigation navigation-prev " aria-label="Previous page: Flume 实时日志收集系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Metaq.html" class="navigation navigation-next " aria-label="Next page: Metaq 消息中间件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Kafka 消息系统","level":"2.9.8","depth":2,"next":{"title":"Metaq 消息中间件","level":"2.9.9","depth":2,"path":"bigtable/Metaq.md","ref":"bigtable/Metaq.md","articles":[]},"previous":{"title":"Flume 实时日志收集系统","level":"2.9.7","depth":2,"path":"bigtable/Flume.md","ref":"bigtable/Flume.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"bigtable/kafka.md","mtime":"2016-06-13T03:30:05.076Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2016-06-20T02:50:42.724Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
