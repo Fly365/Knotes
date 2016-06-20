@@ -147,5 +147,20 @@ plugin jetty || plugin tomcat
 * 生命周期、pom.xml以及依赖、集合、继承
 * eclipse中常见web项目和jetty插件安装
 
+## 将jar安装到本地仓库
+
+	mvn install:install-file  -Dfile=D:/jar/xxx.jar  -DgroupId=xxx.xxx  -DartifactId=xxx -Dversion=x.x -Dpackaging=jar
+
+## 快速创建项目架构
+
+1. 创建web项目
+	
+	mvn archetype:generate -DarchetypeCatalog=internal -DgroupId=org.seckill -DartifactId=seckill -DarchetypeArtifactId=maven-archetype-webapp
+
+2. 创建java项目
+	
+	mvn archetype:generate -DarchetypeCatalog=internal -DgroupId=org.springBatch -DartifactId=springBatch -DarchetypeArtifactId=maven-archetype-quickstart
+	
+
 
 

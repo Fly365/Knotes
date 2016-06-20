@@ -24,6 +24,9 @@ linux 使用命令n安装
     `npm config ls` 查看npm配置，其中prefix配置就是安装路径   
     `npm config set prefix "E:\nodejs"`   
 
+设置环境变量
+NODE_PATH D:\ProgramFiles\Server\nodejs\node_modules
+
 ###### 设置代理
 
 [淘宝NPM镜像](http://npm.taobao.org/),使用cnpm命令
